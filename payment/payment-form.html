@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/payment/payment-form.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Payment form</h1>
+        <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+              <legend>Title</legend>
+              <ul>
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="K" >
+                      King
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="Q">
+                      Queen
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_3">
+                      <input type="radio" id="title_3" name="title" value="J">
+                      Joker
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Name: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="username">
+            </p>
+            <p>
+              <label for="mail">
+                <span>E-mail: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="tel" id="mail" name="usermail" max="11">
+            </p>
+            <p>
+              <label for="pwd">
+                <span>Password: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="password" id="pwd" name="password">
+            </p>
+        </section>
+        <section>
+          <h2>Payment information</h2>
+          <p>
+            <label for="card">
+              <span>Card type:</span>
+            </label>
+            <select id="card" name="usercard">
+              <option value="visa">Visa</option>
+              <option value="mc">Mastercard</option>
+              <option value="amex">American Express</option>
+            </select>
+          </p>
+          <p>
+            <label for="number">
+              <span>Card number:</span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+              <input type="number" id="number" name="cardnumber">
+          </p>
+          <p>
+            <label for="date">
+              <span>Expiration date:</span>
+              <strong><abbr title="required">*</abbr></strong>
+              <em>formatted as mm/yy</em>
+            </label>
+            <input type="date" id="date" name="expiration">
+          </p>
+      </section>
+      <p>
+        <button type="submit">Validate the payment</button>
+      </p>
+      <section>
+        <fieldset>
+          <legend>What is your favorite meal?</legend>
+          <ul>
+            <li>
+              <label for="soup">Soup</label>
+              <input type="radio" id="soup" name="meal" value="soup" checked>
+            </li>
+            <li>
+              <label for="curry">Curry</label>
+              <input type="radio" id="curry" name="meal" value="curry">
+            </li>
+            <li>
+              <label for="pizza">Pizza</label>
+              <input type="radio" id="pizza" name="meal" value="pizza">
+            </li>
+          </ul>
+        </fieldset>
+
+      </section>
+    </form>
+    
+</body>
+</html>
